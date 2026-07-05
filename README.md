@@ -12,6 +12,7 @@
 [![Skills](https://img.shields.io/badge/skills-23-orange.svg)](.claude/skills/)
 [![Blender MCP](https://img.shields.io/badge/Blender_MCP-integrated-blueviolet.svg)](docs/BLENDER_MCP_SETUP.md)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-black.svg)](https://docs.anthropic.com/en/docs/claude-code)
+[![Website](https://img.shields.io/badge/website-blender--skills.vercel.app-orange.svg)](https://blender-skills.vercel.app/)
 
 </div>
 
@@ -201,6 +202,7 @@ MIT License — See [LICENSE](LICENSE) for details.
 
 ## Support
 
+- **Website:** [blender-skills.vercel.app](https://blender-skills.vercel.app/)
 - **Issues:** [GitHub Issues](https://github.com/arjun988/blender-skills/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/arjun988/blender-skills/discussions)
 - **Repository:** [github.com/arjun988/blender-skills](https://github.com/arjun988/blender-skills)
