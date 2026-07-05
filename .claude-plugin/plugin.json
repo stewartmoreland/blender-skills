@@ -1,7 +1,7 @@
 {
-  "name": "aaa-blender-skills",
+  "name": "blender-skills",
   "version": "1.0.0",
-  "description": "AAA Blender skill pack with 23 specialized skills for technical art, modeling, materials, rigging, export pipelines, and style direction. Orchestrated by blender-director with Blender MCP integration for production-ready game assets.",
+  "description": "Blender Skills pack with 23 specialized skills for technical art, modeling, materials, rigging, export pipelines, and style direction. Orchestrated by blender-director with Blender MCP integration for production-ready game assets.",
   "author": {
     "name": "arjun988",
     "url": "https://github.com/arjun988"

@@ -1,16 +1,16 @@
 {
-  "name": "aaa-blender-skills",
+  "name": "blender-skills",
   "owner": {
     "name": "arjun988",
     "url": "https://github.com/arjun988"
   },
   "metadata": {
-    "description": "AAA Blender production skills for Cursor and Claude Code with Blender MCP integration",
+    "description": "Blender Skills production skills for Cursor and Claude Code with Blender MCP integration",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "aaa-blender-skills",
+      "name": "blender-skills",
       "source": "./",
       "description": "23 specialized Blender skills: blender-director orchestrator, modeling disciplines (hard-surface, environment, character, creature), production workflow (sculpt, retopo, UV, materials, textures), technical skills (geometry nodes, lighting, rendering, animation, rigging), pipeline (optimization, export), and style specialists (horror, lowpoly, stylized, realistic). Includes reference-image-match workflow. Built for Blender MCP execution.",
       "version": "1.0.0",

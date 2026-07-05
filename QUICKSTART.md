@@ -10,7 +10,7 @@ From your project or globally:
 
 ```bash
 /plugin marketplace add arjun988/blender-skills
-/plugin install aaa-blender-skills@arjun988
+/plugin install blender-skills@arjun988
 ```
 
 Replace `arjun988` with your GitHub username after publishing the repo.
