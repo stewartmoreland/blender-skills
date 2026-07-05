@@ -27,7 +27,6 @@ dist/
 .cache/
 
 # Output / renders
-*.png
 *.jpg
 *.exr
 *.mp4
