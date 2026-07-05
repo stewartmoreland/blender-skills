@@ -3,12 +3,12 @@ name: animation
 description: Game-ready animation in Blender including walk/run/idle cycles, combat, mechanical animation, camera animation, constraints, Graph Editor, and NLA workflows via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: animation, animate, walk cycle, run cycle, idle, combat, NLA, graph editor, keyframe
-  related-skills: rigging, export-pipeline, character-artist
+  related-skills: rigging, blender-modeler, export-pipeline
 ---
 
 # Animation

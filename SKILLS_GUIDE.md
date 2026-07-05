@@ -1,6 +1,6 @@
 # Blender Skills Guide
 
-Decision trees and workflow combinations for the AAA Blender Skills Pack.
+Decision trees and workflow combinations for the Blender Skills Pack.
 
 ## Start Here
 

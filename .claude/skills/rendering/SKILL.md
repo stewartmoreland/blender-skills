@@ -3,7 +3,7 @@ name: rendering
 description: Blender rendering with Cycles and Eevee including sampling, denoising, camera setup, render passes, color management, and render optimization. Use for final output and look validation via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist

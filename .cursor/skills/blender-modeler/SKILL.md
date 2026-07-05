@@ -3,12 +3,12 @@ name: blender-modeler
 description: Core Blender modeling specialist for Edit Mode, modifiers, collections, precision modeling, and scene organization. Use for general 3D modeling, blockouts, cleanup, non-destructive workflows, and scene structure in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: model, blockout, edit mode, modifier, collection, mesh, primitive, snap, pivot, scene organization
-  related-skills: blender-director, hard-surface, asset-optimization
+  related-skills: hard-surface, environment-artist, asset-optimization, uv-workflow
 ---
 
 # Blender Modeler

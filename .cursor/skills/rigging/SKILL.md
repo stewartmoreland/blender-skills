@@ -3,12 +3,12 @@ name: rigging
 description: Production rigging in Blender with armatures, IK/FK, constraints, weight painting, mechanical rigs, facial rigs, and drivers. Use before animation on deforming assets via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: rig, rigging, armature, bone, IK, FK, weight paint, constraint, facial rig, driver
-  related-skills: animation, character-artist, creature-artist, retopology
+  related-skills: animation, character-artist, blender-modeler
 ---
 
 # Rigging

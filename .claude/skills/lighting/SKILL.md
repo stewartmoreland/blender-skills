@@ -3,12 +3,12 @@ name: lighting
 description: Cinematic and game lighting in Blender including three-point lighting, HDRI, horror lighting, volumetrics, rim lighting, and mood-driven illumination. Use for look development and scene atmosphere via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: lighting, light, HDRI, three point, rim light, volumetric, fog, mood, cinematic, horror lighting
-  related-skills: rendering, horror-style, environment-artist
+  related-skills: rendering, materials, realistic-style, horror-style
 ---
 
 # Lighting Artist

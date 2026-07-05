@@ -3,12 +3,12 @@ name: export-pipeline
 description: Production export from Blender to FBX, GLTF, OBJ, USD, and Alembic with scale, pivot, rotation, normals, materials, animation, and collision verification via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: export, FBX, GLTF, GLB, OBJ, USD, Alembic, Unity, Unreal, game engine import
-  related-skills: asset-optimization, rigging, animation
+  related-skills: asset-optimization, blender-modeler, materials
 ---
 
 # Export Pipeline

@@ -1,6 +1,6 @@
 # Blender MCP Setup Guide
 
-Connect [BlenderMCP](https://github.com/ahujasid/blender-mcp) to Cursor or Claude Code so the AAA Blender Skills Pack can execute operations directly in Blender.
+Connect [BlenderMCP](https://github.com/ahujasid/blender-mcp) to Cursor or Claude Code so the Blender Skills Pack can execute operations directly in Blender.
 
 ## Prerequisites
 

@@ -3,12 +3,12 @@ name: lowpoly-style
 description: Low-poly art direction for Blender inspired by PS1/PS2, Lethal Company, Mouthwashing, and Fear to Fathom. Use for readable silhouettes, minimal polygons, simple materials, and strong atmosphere.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: lowpoly, low poly, PS1, PS2, retro, Lethal Company, Mouthwashing, minimal polygon, flat shading
-  related-skills: horror-style, environment-artist, materials
+  related-skills: environment-artist, materials, export-pipeline, horror-style
 ---
 
 # Low Poly Style Specialist

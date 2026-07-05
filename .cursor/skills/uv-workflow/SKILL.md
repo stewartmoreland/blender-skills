@@ -3,12 +3,12 @@ name: uv-workflow
 description: Production UV unwrapping for seam placement, UV packing, texel density, UDIM, lightmap UVs, and modular UV layouts. Use when preparing meshes for texturing and engine export in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: UV, unwrap, seam, texel density, UV pack, UDIM, lightmap UV, UV layout
-  related-skills: texture-workflow, materials, asset-optimization
+  related-skills: texture-workflow, materials, export-pipeline
 ---
 
 # UV Workflow

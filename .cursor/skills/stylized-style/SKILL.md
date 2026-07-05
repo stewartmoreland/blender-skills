@@ -3,12 +3,12 @@ name: stylized-style
 description: Stylized art direction for Blender with shape language, exaggeration, color harmony, NPR rendering, and hand-painted asset workflows. Use for non-photorealistic game and animation projects.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: stylized, NPR, hand-painted, toon, cartoon, exaggerated, shape language, cel shading
-  related-skills: materials, rendering, character-artist
+  related-skills: materials, rendering, lowpoly-style, environment-artist
 ---
 
 # Stylized Style Specialist

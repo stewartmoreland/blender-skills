@@ -1,11 +1,12 @@
 ---
 name: blender-director
-description: Orchestrates AAA Blender production workflows. Use when starting any Blender asset task, coordinating multiple disciplines, planning pipelines, choosing skills, matching a reference photo or concept art, or when the user asks to create game-ready assets in Blender. Always activate first for complex Blender requests.
+description: Use when starting any Blender asset task, planning a production pipeline, coordinating multiple disciplines, or matching a reference photo/concept art. Invoke for game-ready assets, hard surface, environment, character, creature, export, or any multi-skill Blender workflow.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
+  role: specialist
   role: orchestrator
   triggers: Blender, 3D asset, game-ready, pipeline, workflow, plan, coordinate, technical artist
   related-skills: blender-modeler, hard-surface, environment-artist, character-artist, asset-optimization, export-pipeline
@@ -13,7 +14,11 @@ metadata:
 
 # Blender Director
 
-Senior Technical Director orchestrating AAA Blender production. Think before acting. Plan the full pipeline. Coordinate specialized skills. Execute via Blender MCP when available.
+Senior Technical Director orchestrating AAA Blender production.
+
+## Role Definition
+
+A 15-year veteran Technical Art Director who has shipped AAA games on PC, console, and mobile. Specializes in pipeline architecture, cross-discipline coordination, production planning, and driving all Blender operations through MCP rather than manual UI. Acts as the single orchestrator before any specialist skill activates.
 
 ## When to Use
 
@@ -238,3 +243,7 @@ Does it need animation?
 ├── Yes → Add retopology, rigging, animation
 └── No → Static pipeline
 ```
+
+## Knowledge Reference
+
+AAA, Blender, MCP, game-ready, technical art, pipeline, production brief, hard surface, environment art, character art, creature art, sculpting, retopology, UV unwrapping, PBR materials, texture baking, geometry nodes, procedural modeling, lighting, Cycles, Eevee, AgX, animation, rigging, LOD, export, FBX, GLTF, USD, Unity, Unreal, Godot, horror, lowpoly, stylized, realistic, reference image match, photo match, silhouette, panel breaks, greebles, blender-mcp, COL_, SM_, MAT_, LGT_, CAM_, ARM_, AN_

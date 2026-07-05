@@ -1,6 +1,6 @@
 # Blender Skills Project
 
-AAA Blender Agent Skills Pack for Cursor and Claude Code with Blender MCP integration.
+Blender Skills Pack for Cursor and Claude Code with Blender MCP integration.
 
 ## Project Structure
 

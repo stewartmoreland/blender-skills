@@ -3,12 +3,12 @@ name: character-artist
 description: AAA character modeling for human anatomy, stylization, facial topology, clothing, hair, and animation-ready meshes. Use for game characters, facial expressions, and production character assets in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: character, human, anatomy, face, facial, clothing, hair, body, edge loop, expression, portrait
-  related-skills: retopology, rigging, sculpting, uv-workflow
+  related-skills: sculpting, retopology, rigging, uv-workflow, materials
 ---
 
 # Character Artist

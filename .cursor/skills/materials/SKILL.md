@@ -3,12 +3,12 @@ name: materials
 description: Blender PBR and stylized material creation for metal, wood, concrete, fabric, glass, dirt, rust, and procedural shaders. Use for look development, material reuse, and production shading in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: material, shader, PBR, procedural, metal, wood, fabric, glass, rust, moss, Principled BSDF
-  related-skills: texture-workflow, rendering, stylized-style, realistic-style
+  related-skills: texture-workflow, uv-workflow, lighting, rendering
 ---
 
 # Materials

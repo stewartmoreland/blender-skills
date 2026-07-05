@@ -3,12 +3,12 @@ name: retopology
 description: Production retopology for animation-ready, low-poly, quad-dominant meshes with proper edge loops and efficient polygon flow. Use after sculpting or high-poly modeling before rigging and UV work in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: retopo, retopology, edge loop, quad, topology, animation ready, poly reduction, remesh
-  related-skills: character-artist, creature-artist, sculpting, rigging, uv-workflow
+  related-skills: character-artist, creature-artist, sculpting, uv-workflow
 ---
 
 # Retopology

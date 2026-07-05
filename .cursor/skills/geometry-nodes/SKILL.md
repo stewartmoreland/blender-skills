@@ -3,12 +3,12 @@ name: geometry-nodes
 description: Blender Geometry Nodes for procedural modeling, scatter systems, vegetation, buildings, pipes, cables, and reusable node groups. Use for procedural asset generation and instancing pipelines via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: geometry nodes, procedural, scatter, node group, GN_, instancing, parametric
-  related-skills: procedural-modeling, environment-artist, asset-optimization
+  related-skills: procedural-modeling, environment-artist, blender-modeler
 ---
 
 # Geometry Nodes

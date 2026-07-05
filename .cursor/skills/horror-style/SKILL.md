@@ -3,12 +3,12 @@ name: horror-style
 description: Psychological horror art direction for Blender assets inspired by Silent Hill, Resident Evil, Chilla's Art, Fear to Fathom, and Iron Lung. Use for sparse industrial environments, analog aesthetics, and tension-driven lighting.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: horror, psychological horror, scary, Silent Hill, Resident Evil, Chilla's Art, Fear to Fathom, Iron Lung, creepy, unsettling
-  related-skills: lighting, environment-artist, lowpoly-style
+  related-skills: lighting, environment-artist, lowpoly-style, materials
 ---
 
 # Horror Style Specialist

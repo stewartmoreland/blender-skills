@@ -1,6 +1,6 @@
 # Quick Start
 
-Get the AAA Blender Skills Pack running in Cursor or Claude Code with Blender MCP.
+Get the Blender Skills Pack running in Cursor or Claude Code with Blender MCP.
 
 ## 1. Install Skills
 
@@ -9,11 +9,11 @@ Get the AAA Blender Skills Pack running in Cursor or Claude Code with Blender MC
 From your project or globally:
 
 ```bash
-/plugin marketplace add your-username/blender-skills
-/plugin install aaa-blender-skills@your-username
+/plugin marketplace add arjun988/blender-skills
+/plugin install aaa-blender-skills@arjun988
 ```
 
-Replace `your-username` with your GitHub username after publishing the repo.
+Replace `arjun988` with your GitHub username after publishing the repo.
 
 ### Claude Code (Manual)
 

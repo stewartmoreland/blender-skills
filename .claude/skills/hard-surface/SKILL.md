@@ -3,12 +3,12 @@ name: hard-surface
 description: AAA hard surface modeling for sci-fi, industrial, military, vehicles, weapons, robotics, and mechanical props. Use for boolean/bevel workflows, panel lines, greebles, chamfers, and manufacturing-accurate surfaces in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: hard surface, sci-fi, industrial, military, vehicle, spaceship, weapon, robot, machinery, boolean, bevel, panel line, greeble, mechanical
-  related-skills: blender-modeler, materials, uv-workflow, realistic-style
+  related-skills: blender-modeler, materials, uv-workflow, asset-optimization
 ---
 
 # Hard Surface Artist

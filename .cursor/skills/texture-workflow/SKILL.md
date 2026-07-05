@@ -3,12 +3,12 @@ name: texture-workflow
 description: Production texture workflow for atlases, baking AO/curvature/normal/roughness maps, decals, and texture memory optimization. Use for game-ready texture pipelines in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: texture, bake, normal map, AO, curvature, roughness, metallic, height, atlas, decal, emission
-  related-skills: uv-workflow, materials, asset-optimization, realistic-style
+  related-skills: uv-workflow, materials, asset-optimization
 ---
 
 # Texture Workflow

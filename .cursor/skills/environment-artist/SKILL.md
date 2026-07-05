@@ -3,12 +3,12 @@ name: environment-artist
 description: AAA environment art for modular kits, buildings, terrain, vegetation, architecture, and scene composition. Use for game-optimized environments, storytelling through space, and modular asset pipelines in Blender via MCP.
 license: MIT
 metadata:
-  author: blender-skills
+  author: https://github.com/arjun988
   version: "1.0.0"
   domain: blender
   role: specialist
   triggers: environment, modular kit, building, terrain, vegetation, architecture, interior, exterior, level art, scene composition
-  related-skills: geometry-nodes, procedural-modeling, uv-workflow, lighting
+  related-skills: geometry-nodes, procedural-modeling, materials, lighting
 ---
 
 # Environment Artist

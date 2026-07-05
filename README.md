@@ -1,4 +1,4 @@
-# AAA Blender Skills Pack
+# Blender Skills Pack
 
 Professional Blender Agent Skills for Cursor and Claude Code. Transform your AI assistant into a Senior Technical Art team — not a tutorial bot.
 
@@ -11,11 +11,11 @@ See **[QUICKSTART.md](QUICKSTART.md)** for the full setup guide.
 ### Claude Code Plugin
 
 ```bash
-/plugin marketplace add your-username/blender-skills
-/plugin install aaa-blender-skills@your-username
+/plugin marketplace add arjun988/blender-skills
+/plugin install aaa-blender-skills@arjun988
 ```
 
-Update `your-username` in `.claude-plugin/marketplace.json` before publishing.
+Update `arjun988` in `.claude-plugin/marketplace.json` before publishing.
 
 ### Cursor
 

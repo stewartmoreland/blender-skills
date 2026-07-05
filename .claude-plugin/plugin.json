@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "AAA Blender skill pack with 23 specialized skills for technical art, modeling, materials, rigging, export pipelines, and style direction. Orchestrated by blender-director with Blender MCP integration for production-ready game assets.",
   "author": {
-    "name": "blender-skills"
+    "name": "arjun988",
+    "url": "https://github.com/arjun988"
   },
   "license": "MIT",
-  "repository": "https://github.com/your-username/blender-skills",
+  "repository": "https://github.com/arjun988/blender-skills",
   "keywords": [
     "claude-skill",
     "claude-code",
@@ -27,7 +28,12 @@
     "horror-game",
     "lowpoly",
     "stylized",
-    "photorealistic"
+    "photorealistic",
+    "reference-image-match",
+    "blender-4",
+    "blender-mcp",
+    "game-development",
+    "technical-art"
   ],
   "skills": "./.claude/skills/"
 }
