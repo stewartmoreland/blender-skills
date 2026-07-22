@@ -34,15 +34,14 @@ git checkout -b fix/my-bug-fix
 
 **Adding a new skill:**
 ```bash
-mkdir -p .claude/skills/my-skill
+mkdir -p skills/my-skill
 # Create SKILL.md following the schema below
 # Add references/ subfolder for supporting docs
 ```
 
-**Syncing to Cursor:**
-```powershell
-Copy-Item -Recurse -Force ".claude\skills\*" ".cursor\skills\"
-```
+Skills live in the top-level `skills/` directory — the single source of truth for the Claude plugin, the Vercel skills CLI, and every other agent. Each skill must be **self-contained**: only link files inside its own folder (`references/...`), never `../` paths. If a skill needs a shared standard from `docs/references/`, copy that file into the skill's own `references/` folder.
+
+New skills must also be added to a grouping in `skills.sh.json`.
 
 #### 4. Commit
 ```bash
@@ -136,7 +135,7 @@ keyword1, keyword2, keyword3, phrase, term, concept
 Lean `SKILL.md` (~80–120 lines) + `references/` subfolder.
 
 ```
-.claude/skills/my-skill/
+skills/my-skill/
 ├── SKILL.md
 └── references/
     ├── topic-a.md
@@ -180,7 +179,9 @@ Before submitting:
 2. **MCP test** — does the Python code run in Blender without error?
 3. **Completeness** — does it cover the main use cases?
 4. **Schema** — does frontmatter match the required format?
-5. **Sync** — run `Copy-Item -Recurse -Force ".claude\skills\*" ".cursor\skills\"` and verify
+5. **Self-contained** — `grep -r '\.\./references' skills/my-skill/` returns nothing; all cited files exist inside the skill
+6. **CLI discovery** — `npx skills add ./ --list` shows your skill
+7. **Groupings** — skill is listed in `skills.sh.json`
 
 ---
 

@@ -221,14 +221,14 @@ blender-director → reference-image-match.md
 
 | Reference | Path |
 |-----------|------|
-| Universal Pipeline | `.claude/skills/references/asset-pipeline.md` |
-| Reference Image Match | `.claude/skills/references/reference-image-match.md` |
-| Reference Analysis Template | `.claude/skills/references/reference-analysis-template.md` |
-| Visual Match Checklist | `.claude/skills/references/visual-match-checklist.md` |
-| MCP Integration | `.claude/skills/references/mcp-integration.md` |
-| Naming Conventions | `.claude/skills/references/naming-conventions.md` |
-| Validation Checklist | `.claude/skills/references/validation-checklist.md` |
-| Polycount Budgets | `.claude/skills/references/polycount-budgets.md` |
+| Universal Pipeline | `docs/references/asset-pipeline.md` |
+| Reference Image Match | `docs/references/reference-image-match.md` |
+| Reference Analysis Template | `docs/references/reference-analysis-template.md` |
+| Visual Match Checklist | `docs/references/visual-match-checklist.md` |
+| MCP Integration | `docs/references/mcp-integration.md` |
+| Naming Conventions | `docs/references/naming-conventions.md` |
+| Validation Checklist | `docs/references/validation-checklist.md` |
+| Polycount Budgets | `docs/references/polycount-budgets.md` |
 
 ## Naming Quick Reference
 

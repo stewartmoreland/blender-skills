@@ -4,7 +4,17 @@ Get the Blender Skills Pack running in Cursor or Claude Code with Blender MCP.
 
 ## 1. Install Skills
 
-### Claude Code (Plugin — Recommended)
+### Skills CLI (Recommended — all agents)
+
+The [skills CLI](https://skills.sh) detects your installed agents (Claude Code, Cursor, Codex, and more) and installs to the right locations:
+
+```bash
+npx skills add arjun988/blender-skills
+```
+
+Options: `--list` to browse, `-s <skill>` for specific skills, `-a claude-code -a cursor` to target agents, `-g` for a global (user-level) install.
+
+### Claude Code (Plugin)
 
 From your project or globally:
 
@@ -15,24 +25,14 @@ From your project or globally:
 
 Replace `arjun988` with your GitHub username after publishing the repo.
 
-### Claude Code (Manual)
+### Manual
 
-Skills are at `.claude/skills/`. Copy to your project:
+Skills are at `skills/`. Copy to your project:
 
 ```bash
-cp -r .claude/skills /path/to/your/project/.claude/skills/
+cp -r skills /path/to/your/project/.claude/skills/    # Claude Code
+cp -r skills /path/to/your/project/.agents/skills/    # Cursor / Codex
 ```
-
-### Cursor
-
-Copy skills to Cursor's project skills folder:
-
-```powershell
-# From repo root (Windows)
-Copy-Item -Recurse -Force ".claude\skills\*" ".cursor\skills\"
-```
-
-Or symlink if you prefer a single source of truth.
 
 ## 2. Connect Blender MCP
 
@@ -90,8 +90,8 @@ Full decision trees: [SKILLS_GUIDE.md](SKILLS_GUIDE.md)
 
 ## Troubleshooting
 
-**Skills not activating:** Ensure skills are in `.cursor/skills/` (Cursor) or `.claude/skills/` (Claude Code).
+**Skills not activating:** Ensure skills are in `.agents/skills/` (Cursor/Codex) or `.claude/skills/` (Claude Code) — `npx skills list` shows what's installed where.
 
 **MCP not connecting:** See [docs/BLENDER_MCP_SETUP.md](docs/BLENDER_MCP_SETUP.md) — usually uv PATH or Blender addon not started.
 
-**Agent describes UI instead of executing:** Remind it: *"Use Blender MCP tools"* — skills enforce MCP-first in `.claude/skills/references/mcp-integration.md`.
+**Agent describes UI instead of executing:** Remind it: *"Use Blender MCP tools"* — skills enforce MCP-first in `docs/references/mcp-integration.md`.

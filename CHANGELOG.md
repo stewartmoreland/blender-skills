@@ -6,6 +6,22 @@ Format: [Semantic Versioning](https://semver.org/) — `Major.Minor.Patch`
 
 ---
 
+## [1.4.0] — 2026-07-22
+
+### Changed
+- **Repo restructure for the Vercel skills CLI (skills.sh) + Claude plugin marketplace.** Skills moved from `.claude/skills/` to a top-level `skills/` directory — the canonical layout for both ecosystems and now the single source of truth.
+- **Skills are now self-contained.** Shared reference files formerly linked via `../references/` are copied into each consuming skill's own `references/` folder, so per-skill installs (`npx skills add ... -s <skill>`) work standalone. Canonical copies of the shared standards live in `docs/references/`.
+- `.claude-plugin/plugin.json` and `marketplace.json` now point `skills` at `./skills/`.
+- `.claude/skills` is a symlink to `skills/` so in-repo Claude Code sessions keep working.
+- Removed the manually-synced `.cursor/skills/` mirror — Cursor (and Codex, and 30+ other agents) install via `npx skills add arjun988/blender-skills`.
+- Fixed duplicate `role:` YAML key in `blender-director` frontmatter.
+
+### Added
+- `skills.sh.json` — skill groupings for the skills.sh repo page (Core Pipeline, Engine Export, Discipline Artists, Look & Light, Animation & Simulation, Art Styles, Horror, Moods, Worlds, Game Genres).
+- Skills CLI installation instructions in README and QUICKSTART.
+
+---
+
 ## [1.3.0] — 2026-07-10
 
 ### Added

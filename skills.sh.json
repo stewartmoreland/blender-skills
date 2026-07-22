@@ -1,0 +1,160 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Core Pipeline",
+      "description": "Orchestration, modeling, and the universal asset production pipeline.",
+      "skills": [
+        "blender-director",
+        "blender-modeler",
+        "scene-assembly",
+        "qa-review",
+        "asset-optimization",
+        "retopology",
+        "collision-proxy",
+        "uv-workflow",
+        "texture-workflow",
+        "lod-pipeline"
+      ]
+    },
+    {
+      "title": "Engine Export",
+      "description": "Export pipelines for game engines and interchange formats.",
+      "skills": [
+        "export-pipeline",
+        "godot-export",
+        "unity-export",
+        "unreal-export"
+      ]
+    },
+    {
+      "title": "Discipline Artists",
+      "description": "Specialist artist roles for characters, environments, props, and technical modeling.",
+      "skills": [
+        "character-artist",
+        "character-archetypes",
+        "creature-artist",
+        "environment-artist",
+        "prop-artist",
+        "vehicle-artist",
+        "vegetation-artist",
+        "hard-surface",
+        "sculpting",
+        "procedural-modeling",
+        "geometry-nodes",
+        "archviz"
+      ]
+    },
+    {
+      "title": "Look & Light",
+      "description": "Materials, lighting, rendering, cinematography, and scene dressing.",
+      "skills": [
+        "materials",
+        "lookdev",
+        "lighting",
+        "rendering",
+        "compositing",
+        "camera-cinematography",
+        "set-dressing"
+      ]
+    },
+    {
+      "title": "Animation & Simulation",
+      "description": "Rigging, animation, and physics-driven effects.",
+      "skills": [
+        "animation",
+        "rigging",
+        "cloth-sim",
+        "hair-groom",
+        "physics-sim",
+        "vfx-fx"
+      ]
+    },
+    {
+      "title": "Art Styles",
+      "description": "Visual style direction from lowpoly and pixel art to painterly and retro eras.",
+      "skills": [
+        "anime-style",
+        "cartoon-style",
+        "chibi-style",
+        "comic-book-style",
+        "manga-style",
+        "hand-painted-style",
+        "painterly-style",
+        "stylized-style",
+        "realistic-style",
+        "minimalist-style",
+        "vector-style",
+        "lowpoly-style",
+        "voxel-style",
+        "isometric-style",
+        "pixel-art-style",
+        "retro-8bit-style",
+        "retro-16bit-style",
+        "hd-2d-style",
+        "frutiger-aero-style",
+        "dream-weirdcore-style",
+        "liminal-space-style",
+        "neon-retrofuturism",
+        "noir-style",
+        "stop-motion-craft-style",
+        "visual-console-eras"
+      ]
+    },
+    {
+      "title": "Horror",
+      "description": "Horror subgenre direction: PSX, found footage, body horror, eldritch, and more.",
+      "skills": [
+        "horror-style",
+        "psx-horror-style",
+        "analog-found-footage-horror",
+        "body-horror-style",
+        "cosmic-eldritch-horror",
+        "folk-horror-style",
+        "indie-horror-aesthetics",
+        "mascot-puppet-horror"
+      ]
+    },
+    {
+      "title": "Moods",
+      "description": "Emotional tone and atmosphere direction.",
+      "skills": [
+        "brutalist-mood",
+        "cozy-wholesome-mood",
+        "dark-gritty-mood",
+        "dream-surreal-mood"
+      ]
+    },
+    {
+      "title": "Worlds",
+      "description": "World and setting themes for environments.",
+      "skills": [
+        "apocalypse-worlds",
+        "biome-worlds",
+        "fantasy-worlds",
+        "historical-worlds",
+        "sci-fi-punk-worlds"
+      ]
+    },
+    {
+      "title": "Game Genres",
+      "description": "Gameplay-genre asset direction from RPGs to soulslikes.",
+      "skills": [
+        "genre-action-combat",
+        "genre-card-party-idle",
+        "genre-metroidvania-roguelike",
+        "genre-narrative-vn",
+        "genre-open-world-sandbox",
+        "genre-puzzle-platformer",
+        "genre-racing-sports",
+        "genre-rpg",
+        "genre-shooter",
+        "genre-soulslike",
+        "genre-stealth",
+        "genre-strategy-sim",
+        "genre-survival"
+      ]
+    }
+  ]
+}

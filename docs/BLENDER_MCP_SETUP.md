@@ -137,8 +137,8 @@ The `execute_blender_code` tool runs arbitrary Python in Blender. **Save your `.
 
 Once connected, all skills in this pack prefer MCP execution. See:
 
-- `.claude/skills/references/mcp-integration.md` — Agent protocol
-- `.claude/skills/references/mcp-tools.md` — Tool catalog
+- `docs/references/mcp-integration.md` — Agent protocol
+- `docs/references/mcp-tools.md` — Tool catalog
 
 ## Links
 

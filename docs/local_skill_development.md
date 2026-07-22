@@ -16,8 +16,8 @@ cd blender-skills
 ### 1. Create the folder structure
 
 ```bash
-mkdir -p .claude/skills/my-skill
-mkdir -p .claude/skills/my-skill/references
+mkdir -p skills/my-skill
+mkdir -p skills/my-skill/references
 ```
 
 ### 2. Create `SKILL.md`
@@ -78,7 +78,7 @@ keyword1, keyword2, keyword3
 For large topics, use progressive disclosure:
 
 ```bash
-# .claude/skills/my-skill/references/topic.md
+# skills/my-skill/references/topic.md
 ```
 
 Reference file header:
@@ -91,14 +91,15 @@ Reference file header:
 
 ### 4. Test locally
 
-**Cursor:**
-```powershell
-Copy-Item -Recurse -Force ".claude\skills\*" ".cursor\skills\"
+**Any agent (skills CLI):**
+```bash
+# From a test project, install straight from your local clone
+npx skills add /path/to/blender-skills -s my-skill
 ```
-Restart Cursor. Prompt: `"Use my-skill to [task]"` — verify it activates and routes correctly.
+Restart your agent. Prompt: `"Use my-skill to [task]"` — verify it activates and routes correctly.
 
 **Claude Code:**
-Skills in `.claude/skills/` are picked up automatically in the project.
+Skills in `skills/` are picked up automatically in the project (via the `.claude/skills` symlink).
 
 ### 5. Test MCP operations
 
@@ -114,24 +115,16 @@ Check your `SKILL.md` has all required fields:
 
 ```bash
 # Quick check - look for required fields
-Select-String -Path ".claude/skills/my-skill/SKILL.md" -Pattern "name:|description:|author:|triggers:|role:|related-skills:"
+Select-String -Path "skills/my-skill/SKILL.md" -Pattern "name:|description:|author:|triggers:|role:|related-skills:"
 ```
 
-## Syncing `.claude` to `.cursor`
+## Keeping Skills Self-Contained
 
-Always sync after changes:
+Each skill directory is installed on its own by the skills CLI, so SKILL.md may only link files inside the skill's own folder:
 
-```powershell
-Copy-Item -Recurse -Force ".claude\skills\*" ".cursor\skills\"
-```
-
-Or add this as a git hook (`scripts/sync-skills.ps1`):
-
-```powershell
-# .git/hooks/pre-commit (PowerShell wrapper)
-Copy-Item -Recurse -Force ".claude\skills\*" ".cursor\skills\"
-git add ".cursor\skills\"
-```
+- Link `references/topic.md`, never `../references/...`.
+- If a skill needs a shared standard from `docs/references/`, copy the file into the skill's `references/` folder.
+- Check: `grep -r '\.\./references' skills/my-skill/` must return nothing.
 
 ## Validating Before Commit
 
@@ -141,7 +134,9 @@ Manually check:
 - [ ] Description follows formula: `Use when [...]. Invoke for [...].`
 - [ ] Sections present: Role Definition, When to Use, Core Workflow, Constraints, Knowledge Reference
 - [ ] MCP code tested in Blender (no exceptions)
-- [ ] `.cursor/skills/` synced
+- [ ] Skill is self-contained (no `../` links)
+- [ ] Skill listed in a `skills.sh.json` grouping
+- [ ] `npx skills add ./ --list` shows the skill
 
 ## Submitting
 
@@ -163,4 +158,4 @@ Common gotchas when writing MCP Python:
 | `bpy.ops.view3d.view_camera()` | Requires `temp_override(area=area, region=region)` |
 | Emission `Strength` keyframe on shared mat | Causes white blowout — use per-object `MAT_LightInst_*` |
 
-See `.claude/skills/references/mcp-tools.md` for the full tool catalog.
+See `docs/references/mcp-tools.md` for the full tool catalog.

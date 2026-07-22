@@ -7,15 +7,16 @@
 **94 Specialized Skills for Blender Artists.**
 **Transform Cursor, Claude Code, Kiro, and Codex into your Senior Technical Art team — not a tutorial bot.**
 
-[![Version](https://img.shields.io/badge/version-1.3.0-blue.svg)](version.json)
+[![Version](https://img.shields.io/badge/version-1.4.0-blue.svg)](version.json)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-94-orange.svg)](.claude/skills/)
+[![Skills](https://img.shields.io/badge/skills-94-orange.svg)](skills/)
 [![Blender MCP](https://img.shields.io/badge/Blender_MCP-integrated-blueviolet.svg)](docs/BLENDER_MCP_SETUP.md)
 [![Cursor](https://img.shields.io/badge/Cursor-skills-blue.svg)](https://cursor.com)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-black.svg)](https://docs.anthropic.com/en/docs/claude-code)
 [![Kiro](https://img.shields.io/badge/Kiro-compatible-purple.svg)](https://kiro.dev)
 [![Codex](https://img.shields.io/badge/Codex-compatible-green.svg)](https://openai.com/codex)
 [![Website](https://img.shields.io/badge/website-blender--skills.vercel.app-orange.svg)](https://blender-skills.vercel.app/)
+[![Install with skills CLI](https://skills.sh/b/arjun988/blender-skills)](https://skills.sh/arjun988/blender-skills)
 
 </div>
 
@@ -23,34 +24,42 @@
 
 ## Quick Start
 
+Works with **Cursor**, **Claude Code**, **Kiro**, and **Codex** — same skill pack, Blender MCP execution.
+
+### Skills CLI (Recommended — all agents)
+
+Install with the [skills CLI](https://skills.sh) — it detects your agents (Claude Code, Cursor, Codex, and 30+ others) and installs to the right location:
+
+```bash
+npx skills add arjun988/blender-skills
+```
+
+Useful variants:
+
+```bash
+npx skills add arjun988/blender-skills --list              # browse available skills
+npx skills add arjun988/blender-skills -s blender-director # install specific skills
+npx skills add arjun988/blender-skills -a cursor -a codex  # target specific agents
+npx skills add arjun988/blender-skills --skill '*' -g      # everything, globally
+```
+
+### Claude Code (Plugin)
+
 > **Marketplace listing is currently under review by Anthropic.**
 > Install directly from GitHub in the meantime.
 
-Works with **Cursor**, **Claude Code**, **Kiro**, and **Codex** — same skill pack, Blender MCP execution.
+```bash
+/plugin marketplace add arjun988/blender-skills
+/plugin install blender-skills@arjun988
+```
 
-**Claude Code**
+### Manual
+
 ```bash
 git clone https://github.com/arjun988/blender-skills.git
-cp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/
-```
-
-**Cursor (Windows)**
-```powershell
-git clone https://github.com/arjun988/blender-skills.git
-Copy-Item -Recurse -Force "blender-skills\.claude\skills\*" ".cursor\skills\"
-```
-
-**Kiro**
-```bash
-# Copy skill folders into your Kiro skills directory, then restart Kiro
-cp -r blender-skills/.claude/skills/* /path/to/kiro/skills/
-```
-
-**Codex**
-```bash
-# Mount or copy skills into your Codex skills path
-cp -r blender-skills/.claude/skills/* /path/to/codex/skills/
-# or: ln -s /path/to/blender-skills/.claude/skills /path/to/codex/skills/blender-skills
+cp -r blender-skills/skills /path/to/your/project/.claude/skills/   # Claude Code
+cp -r blender-skills/skills /path/to/your/project/.agents/skills/   # Cursor / Codex
+cp -r blender-skills/skills/* /path/to/kiro/skills/                 # Kiro
 ```
 
 For all installation methods and first steps, see the **[Quick Start Guide](https://blender-skills.vercel.app/getting-started/)**.
@@ -99,7 +108,7 @@ Attach a photo or concept art and the agent matches it:
 
 | Category | Skills |
 |----------|--------|
-| **Orchestration** | [blender-director](.claude/skills/blender-director/) |
+| **Orchestration** | [blender-director](skills/blender-director/) |
 | **Modeling** | blender-modeler, hard-surface, prop-artist, vehicle-artist, environment-artist, vegetation-artist, character-artist, creature-artist, character-archetypes |
 | **Production** | sculpting, retopology, uv-workflow, materials, texture-workflow, hair-groom, cloth-sim, lookdev |
 | **Technical** | geometry-nodes, lighting, camera-cinematography, rendering, compositing, animation, rigging, vfx-fx, physics-sim |
@@ -134,10 +143,10 @@ Full guide: **[docs/BLENDER_MCP_SETUP.md](docs/BLENDER_MCP_SETUP.md)**
 
 | Config / Path | Client |
 |---------------|--------|
-| `.cursor/mcp.json` + `.cursor/skills/` | Cursor |
+| `.cursor/mcp.json` + `.agents/skills/` | Cursor |
 | `.mcp.json` + `.claude/skills/` | Claude Code |
 | Kiro skills dir + Blender MCP | Kiro |
-| Codex skills path + Blender MCP | Codex |
+| Codex skills path (`.agents/skills/`) + Blender MCP | Codex |
 
 ---
 
@@ -191,21 +200,24 @@ Every skill in this pack:
 ## Project Structure
 
 ```
-.claude-plugin/           # Claude Code plugin manifest
-.claude/skills/           # 94 skills + 175+ reference files
+skills/                   # 94 self-contained skills (single source of truth)
   ├── blender-director/
+  │   ├── SKILL.md
+  │   └── references/     # Per-skill reference files
   ├── hard-surface/
   ├── prop-artist/
   ├── genre-shooter/
   ├── sci-fi-punk-worlds/
-  ├── ... (89 more skills)
-  └── references/         # Asset pipeline, naming, MCP tools, checklists
-.cursor/skills/           # Synced mirror for Cursor
+  └── ... (89 more skills)
+skills.sh.json            # skills.sh page groupings (Vercel skills CLI)
+.claude-plugin/           # Claude Code plugin + marketplace manifests
+.claude/skills            # Symlink → skills/ (in-repo Claude Code sessions)
 .cursor/mcp.json          # Blender MCP config (Cursor)
 .mcp.json                 # Blender MCP config (Claude Code)
 site/                     # Website (blender-skills.vercel.app)
 docs/
-  └── BLENDER_MCP_SETUP.md
+  ├── BLENDER_MCP_SETUP.md
+  └── references/         # Canonical shared standards (pipeline, naming, checklists)
 ```
 
 ---
@@ -219,7 +231,7 @@ docs/
 | [docs/BLENDER_MCP_SETUP.md](docs/BLENDER_MCP_SETUP.md) | Blender MCP connection guide |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to add skills and contribute |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
-| [.claude/skills/references/](.claude/skills/references/) | Shared pipeline standards |
+| [docs/references/](docs/references/) | Shared pipeline standards |
 
 ---
 
